@@ -47,27 +47,14 @@ public class MainActivity extends Activity {
         timerAtual.schedule(task, 1, 1000);
     }
 
-        public void verificaEvento() { // Verifica o horario do celular e mostra o evento que está ocorrendo no momento.
-            int eventoAtual;
-            Timestamp horaAtual = new Timestamp(System.currentTimeMillis());
-            eventoAtual = evento.retornaEvento(horaAtual);
-            System.out.println("\nHorário: " + horaAtual + " " + "Evento atual: " + eventoAtual);
-            ocorrendoAgora.setText("Funfando");
+    public void verificaEvento() { // Verifica o horario do celular e mostra o evento que está ocorrendo no momento.
+        int eventoAtual;
+        Timestamp horaAtual = new Timestamp(System.currentTimeMillis());
+        eventoAtual = evento.retornaEvento(horaAtual);
+        System.out.println("\nHorário: " + horaAtual + " " + "Evento atual: " + eventoAtual);
+        ocorrendoAgora.setText("Funfando");
     }
 
-    public void verificaEvento() {
-        TextView ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
-        SimpleDateFormat dateFormat_hora = new SimpleDateFormat("HH:mm");
-        SimpleDateFormat dateFormat_dia = new SimpleDateFormat("dd/MM/yyyy");
-        Date data = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(data);
-        Date data_atual = cal.getTime();
-        String hora_atual = dateFormat_hora.format(data_atual);
-        String dia_atual = dateFormat_dia.format(data_atual);
-        System.out.println("Dia:" + dia_atual + " " + "Hora: " + hora_atual);
-        
-    }
     public void chamaMenu(View view){
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
