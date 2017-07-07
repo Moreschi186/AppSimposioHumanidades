@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -58,6 +59,10 @@ public class MainActivity extends Activity {
         String dia_atual = dateFormat_dia.format(data_atual);
         System.out.println("Dia:" + dia_atual + " " + "Hora: " + hora_atual);
         
+    }
+    public void chamaMenu(View view){
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
     }
 
 }

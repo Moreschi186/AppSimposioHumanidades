@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ocorrendo_agora"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Ocorrendo Agora" />
+        <item
+            android:id="@+id/nav_programacao"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Programação" />
+        <item
+            android:id="@+id/nav_palestrantes"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Palestrantes" />
+        <item
+            android:id="@+id/nav_inscricoes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Inscrições" />
+        <item
+            android:id="@+id/nav_avalie_evento"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Avalie o Evento" />
+        <item
+            android:id="@+id/nav_sobre_simposio"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sobre o Simpósio" />
+        <item
+            android:id="@+id/nav_sobre_aplicativo"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sobre o Aplicativo" />
+    </group>
+
+
+</menu>
