@@ -1,5 +1,6 @@
 package com.example.mathe.appsimposiohumanidades;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,14 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MenuActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,
-                    OcorrendoAgoraFragment.OnFragmentInteractionListener,
-                    ProgramacaoFragment.OnFragmentInteractionListener,
-                    PalestrantesFragment.OnFragmentInteractionListener,
-                    InscricoesFragment.OnFragmentInteractionListener,
-                    AvalieEventoFragment.OnFragmentInteractionListener,
-                    SobreAplicativoFragment.OnFragmentInteractionListener,
-                    SobreSimposioFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,42 +83,28 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        Fragment fragmento = null;
-        Boolean fragmentoselecionado = false;
-
 
         if (id == R.id.nav_ocorrendo_agora) {
-            fragmento = new OcorrendoAgoraFragment();
-            fragmentoselecionado = true;
 
         } else if (id == R.id.nav_programacao) {
-            fragmento = new ProgramacaoFragment();
-            fragmentoselecionado = true;
+
 
         } else if (id == R.id.nav_palestrantes) {
-            fragmento = new PalestrantesFragment();
-            fragmentoselecionado = true;
+            Intent intent = new Intent(this, Palestrantes.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_inscricoes) {
-            fragmento = new InscricoesFragment();
-            fragmentoselecionado = true;
+
 
         } else if (id == R.id.nav_avalie_evento) {
-            fragmento = new AvalieEventoFragment();
-            fragmentoselecionado = true;
+
 
         } else if (id == R.id.nav_sobre_simposio) {
-            fragmento = new SobreSimposioFragment();
-            fragmentoselecionado = true;
+
 
         } else if (id == R.id.nav_sobre_aplicativo) {
-            fragmento = new SobreAplicativoFragment();
-            fragmentoselecionado = true;
 
-        }
 
-        if(fragmentoselecionado){
-            getSupportFragmentManager().beginTransaction().replace(R.id.contentPai, fragmento).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
