@@ -23,7 +23,9 @@
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Palestrantes"></activity>
+        <activity android:name=".Palestrantes" />
+        <activity android:name=".Programacao" />
+        <activity android:name=".Programacao29"></activity>
     </application>
 
 </manifest>
