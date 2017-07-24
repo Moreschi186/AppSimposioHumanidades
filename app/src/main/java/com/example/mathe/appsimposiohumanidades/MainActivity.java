@@ -17,6 +17,7 @@ import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -31,7 +32,9 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
+                                                                InscricoesFragment.OnFragmentInteractionListener,
+                                                                InicioFragment.OnFragmentInteractionListener{
 
     private Timer timerAtual = new Timer();
     private TimerTask task;
@@ -64,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Fragment fragment = new InicioFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_pai, fragment).commit();
     }
 
     private void ativaTimer(){
@@ -156,20 +161,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Fragment fragment = null;
+        Boolean fragmentoSelecionado = true;
 
-
-        if (id == R.id.nav_ocorrendo_agora) {
-
+        if (id == R.id.nav_inicio) {
+            fragment = new InicioFragment();
+            fragmentoSelecionado = true;
         } else if (id == R.id.nav_programacao) {
-            Intent intent = new Intent(this, Programacao29.class);
-            startActivity(intent);
+           // Intent intent = new Intent(this, Programacao29.class);
+            // startActivity(intent);
 
         } else if (id == R.id.nav_palestrantes) {
             Intent intent = new Intent(this, Palestrantes.class);
             startActivity(intent);
+            fragmentoSelecionado = false;
+
 
         } else if (id == R.id.nav_inscricoes) {
-
+            fragment = new InscricoesFragment();
+            fragmentoSelecionado = true;
 
         } else if (id == R.id.nav_avalie_evento) {
 
@@ -181,6 +191,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         }
+
+        if(fragmentoSelecionado){
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_pai, fragment).commit();
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
