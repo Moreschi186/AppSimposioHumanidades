@@ -50,14 +50,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -167,28 +159,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_inicio) {
             fragment = new InicioFragment();
             fragmentoSelecionado = true;
-        } else if (id == R.id.nav_programacao) {
-           // Intent intent = new Intent(this, Programacao29.class);
-            // startActivity(intent);
-
-        } else if (id == R.id.nav_palestrantes) {
+        }
+        else if (id == R.id.nav_palestrantes) {
             Intent intent = new Intent(this, Palestrantes.class);
             startActivity(intent);
             fragmentoSelecionado = false;
-
-
-        } else if (id == R.id.nav_inscricoes) {
+        }
+        else if (id == R.id.nav_inscricoes) {
             fragment = new InscricoesFragment();
             fragmentoSelecionado = true;
 
-        } else if (id == R.id.nav_avalie_evento) {
+        }
+        else if (id == R.id.nav_avalie_evento) {
+            fragmentoSelecionado = false;
 
+        }
 
-        } else if (id == R.id.nav_sobre_simposio) {
+        else if (id == R.id.nav_dia28) {
+            fragmentoSelecionado = false;
+        }
+        else if(id == R.id.nav_dia29){
+            fragmentoSelecionado = false;
+        }
+        else if(id == R.id.nav_dia30){
+            fragmentoSelecionado = false;
+        }
+        else if (id == R.id.nav_sobre_simposio) {
+            fragmentoSelecionado = false;
 
 
         } else if (id == R.id.nav_sobre_aplicativo) {
-
+            fragmentoSelecionado = false;
 
         }
 
