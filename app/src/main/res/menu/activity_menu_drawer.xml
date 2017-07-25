@@ -1,36 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_ocorrendo_agora"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Ocorrendo Agora" />
-        <item
-            android:id="@+id/nav_programacao"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Programação" />
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Página Inicial" />
+
+
         <item
             android:id="@+id/nav_palestrantes"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Palestrantes" />
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Palestrantes">
+        </item>
         <item
             android:id="@+id/nav_inscricoes"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_person_add_black_24dp"
             android:title="Inscrições" />
         <item
             android:id="@+id/nav_avalie_evento"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_chat_black_24dp"
             android:title="Avalie o Evento" />
+
+    </group>
+
+    <item
+        android:id="@+id/nav_programacao"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Programação">
+
+        <menu>
+            <item
+                android:id="@+id/nav_dia28"
+                android:icon="@drawable/ic_date_24dp"
+                android:title="Dia 28" />
+            <item
+                android:id="@+id/nav_dia29"
+                android:icon="@drawable/ic_date_24dp"
+                android:title="Dia 29" />
+            <item
+                android:id="@+id/nav_dia30"
+                android:icon="@drawable/ic_date_24dp"
+                android:title="Dia 30" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_sobre_simposio"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Sobre o Simpósio" />
-        <item
-            android:id="@+id/nav_sobre_aplicativo"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Sobre o Aplicativo" />
+            android:id="@+id/nav_sobre"
+            android:title="Sobre">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_sobre_simposio"
+                    android:icon="@drawable/ic_info_black_24dp"
+                    android:title="Sobre o Simpósio" />
+                <item
+                    android:id="@+id/nav_sobre_aplicativo"
+                    android:icon="@drawable/ic_info_black_24dp"
+                    android:title="Sobre o Aplicativo" />
+            </menu>
+        </item>
     </group>
 
 
+
+
 </menu>
+
