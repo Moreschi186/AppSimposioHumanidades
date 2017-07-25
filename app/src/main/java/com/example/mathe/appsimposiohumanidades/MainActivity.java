@@ -34,7 +34,8 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
                                                                 InscricoesFragment.OnFragmentInteractionListener,
-                                                                InicioFragment.OnFragmentInteractionListener{
+                                                                InicioFragment.OnFragmentInteractionListener,
+                                                                AvalieEventoFragment.OnFragmentInteractionListener{
 
     private Timer timerAtual = new Timer();
     private TimerTask task;
@@ -44,9 +45,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
-        ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
-        ativaTimer();
+        setContentView(R.layout.activity_main);
+
+        //ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
+        //ativaTimer();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -171,7 +173,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }
         else if (id == R.id.nav_avalie_evento) {
-            fragmentoSelecionado = false;
+            fragment = new AvalieEventoFragment();
+            fragmentoSelecionado = true;
 
         }
 
@@ -179,6 +182,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentoSelecionado = false;
         }
         else if(id == R.id.nav_dia29){
+            Intent intent = new Intent(this, Programacao29.class);
+            startActivity(intent);
             fragmentoSelecionado = false;
         }
         else if(id == R.id.nav_dia30){
