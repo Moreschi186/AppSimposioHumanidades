@@ -14,6 +14,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Palestrantes" />
-        <activity android:name=".Programacao" />
-        <activity android:name=".Programacao29" />
-        <activity android:name=".Programacao30"></activity>
+        <activity android:name=".Palestrantes" android:screenOrientation="portrait"/>
+        <activity android:name=".Programacao" android:screenOrientation="portrait"/>
+        <activity android:name=".Programacao29" android:screenOrientation="portrait" />
+        <activity android:name=".Programacao30" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
