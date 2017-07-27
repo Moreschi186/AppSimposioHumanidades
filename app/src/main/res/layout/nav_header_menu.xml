@@ -16,10 +16,12 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.55"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/simp"
-        android:layout_weight="0.64" />
+        app:srcCompat="@mipmap/teste" />
 
     <TextView
         android:layout_width="match_parent"
