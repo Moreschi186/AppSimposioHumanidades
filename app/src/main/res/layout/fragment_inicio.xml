@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.16"
             android:text="Bem Vindo!"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"/>
 
         <ImageView
             android:id="@+id/imageView2"

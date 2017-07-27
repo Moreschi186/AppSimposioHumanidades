@@ -35,7 +35,9 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
                                                                 InscricoesFragment.OnFragmentInteractionListener,
                                                                 InicioFragment.OnFragmentInteractionListener,
-                                                                AvalieEventoFragment.OnFragmentInteractionListener{
+                                                                AvalieEventoFragment.OnFragmentInteractionListener,
+                                                                SobreAplicativoFragment.OnFragmentInteractionListener,
+                                                                SobreSimposioFragment.OnFragmentInteractionListener{
 
     private Timer timerAtual = new Timer();
     private TimerTask task;
@@ -194,11 +196,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentoSelecionado = false;
         }
         else if (id == R.id.nav_sobre_simposio) {
-            fragmentoSelecionado = false;
+            fragment = new SobreSimposioFragment();
+            fragmentoSelecionado = true;
 
 
         } else if (id == R.id.nav_sobre_aplicativo) {
-            fragmentoSelecionado = false;
+            fragment = new SobreAplicativoFragment();
+            fragmentoSelecionado = true;
 
         }
 

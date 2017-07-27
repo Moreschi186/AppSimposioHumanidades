@@ -1,29 +1,23 @@
 package com.example.mathe.appsimposiohumanidades;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link InscricoesFragment.OnFragmentInteractionListener} interface
+ * {@link SobreAplicativoFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link InscricoesFragment#newInstance} factory method to
+ * Use the {@link SobreAplicativoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class InscricoesFragment extends Fragment {
+public class SobreAplicativoFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,11 +26,10 @@ public class InscricoesFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    public WebView mWebView;
 
     private OnFragmentInteractionListener mListener;
 
-    public InscricoesFragment() {
+    public SobreAplicativoFragment() {
         // Required empty public constructor
     }
 
@@ -46,23 +39,16 @@ public class InscricoesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment InscricoesFragment.
+     * @return A new instance of fragment SobreAplicativoFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static InscricoesFragment newInstance(String param1, String param2) {
-        InscricoesFragment fragment = new InscricoesFragment();
+    public static SobreAplicativoFragment newInstance(String param1, String param2) {
+        SobreAplicativoFragment fragment = new SobreAplicativoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
-    }
-
-    private void mensagem(){
-        AlertDialog.Builder mensagem = new AlertDialog.Builder(this.getActivity()).setTitle("Como realizar sua inscrição:");
-        mensagem.setMessage("1. Selecione o tipo de atividade como EVENTO e realize a busca.\n\n2. Na aba 'Cursos e Eventos localizados' localize o evento 'II Simpósio de Humanidades - IFSC Canoinhas' e clique no botão de inscrição representado por uma seta verde.");
-        mensagem.setNeutralButton("Entendi", null);
-        mensagem.show();
     }
 
     @Override
@@ -72,24 +58,13 @@ public class InscricoesFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        mensagem();
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.fragment_inscricoes, container, false);
-        mWebView = (WebView) v.findViewById(R.id.webview1);
-        mWebView.loadUrl("https://sigaa.ifsc.edu.br/sigaa/public/extensao/consulta_extensao.jsf"); // aqui podemos colocar a url das inscricoes
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setSupportZoom(true);
-
-        mWebView.setWebViewClient(new WebViewClient());
-
-        return v;
-
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_sobre_aplicativo, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -130,6 +105,4 @@ public class InscricoesFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
-
 }

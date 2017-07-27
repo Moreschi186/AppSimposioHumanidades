@@ -16,12 +16,12 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.55"
+        android:layout_height="100dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/teste" />
+        app:srcCompat="@mipmap/teste"
+        android:layout_weight="0.98" />
 
     <TextView
         android:layout_width="match_parent"
@@ -29,11 +29,5 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/title_activity_menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="simposio@example.com" />
 
 </LinearLayout>
