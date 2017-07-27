@@ -1,6 +1,7 @@
 package com.example.mathe.appsimposiohumanidades;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -57,6 +58,13 @@ public class InscricoesFragment extends Fragment {
         return fragment;
     }
 
+    private void mensagem(){
+        AlertDialog.Builder mensagem = new AlertDialog.Builder(this.getActivity()).setTitle("Como realizar sua inscrição");
+        mensagem.setMessage("1. Selecione o tipo de atividade como EVENTO e realize a busca.\n2. Na aba 'Cursos e Eventos localizados' localize o evento 'II Simpósio de Humanidades - IFSC Canoinhas' e clique no botão de inscrição representado por uma seta verde");
+        mensagem.setNeutralButton("Entendi", null);
+        mensagem.show();
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,19 +72,19 @@ public class InscricoesFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        mensagem();
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View v=inflater.inflate(R.layout.fragment_inscricoes, container, false);
         mWebView = (WebView) v.findViewById(R.id.webview1);
-        mWebView.loadUrl("https://google.com"); // aqui podemos colocar a url das inscricoes
+        mWebView.loadUrl("https://sigaa.ifsc.edu.br/sigaa/public/extensao/consulta_extensao.jsf"); // aqui podemos colocar a url das inscricoes
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setSupportZoom(false);
+        webSettings.setSupportZoom(true);
 
         mWebView.setWebViewClient(new WebViewClient());
 

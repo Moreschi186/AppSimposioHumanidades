@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
@@ -26,6 +29,7 @@ public class AvalieEventoFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    public WebView mWebView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -58,13 +62,22 @@ public class AvalieEventoFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_avalie_evento, container, false);
+        View v=inflater.inflate(R.layout.fragment_inscricoes, container, false);
+        mWebView = (WebView) v.findViewById(R.id.webview1);
+        mWebView.loadUrl("https://goo.gl/forms/98kUyn6VyVqvTp9L2"); // aqui podemos colocar a url das inscricoes
+        WebSettings webSettings = mWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setSupportZoom(true);
+
+        mWebView.setWebViewClient(new WebViewClient());
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

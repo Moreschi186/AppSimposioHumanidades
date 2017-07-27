@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".Palestrantes" />
         <activity android:name=".Programacao" />
-        <activity android:name=".Programacao29"></activity>
+        <activity android:name=".Programacao29" />
+        <activity android:name=".Programacao30"></activity>
     </application>
 
 </manifest>

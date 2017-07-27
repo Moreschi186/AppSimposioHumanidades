@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Programacao29 extends AppCompatActivity {
+public class Programacao30 extends AppCompatActivity {
 
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
@@ -28,7 +28,7 @@ public class Programacao29 extends AppCompatActivity {
         expListView.setAdapter(listAdapter);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setTitle("Programação 29/08");
+        getSupportActionBar().setTitle("Programação 30/08");
     }
 
     public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar
@@ -52,19 +52,19 @@ public class Programacao29 extends AppCompatActivity {
         listDataHeader.add("19:00 - 22:00");
         // Adding child data
         List<String> horario1 = new ArrayList<String>();
-        horario1.add("Evento: Palestra\nTema: Diversidade étnico racial, de gênero e orientação.\nPalestrante: Nei d' Ogum(Militante GLBT)");
-        horario1.add("Evento: Palestra\nTema: Educação e desenvolvimento terrorial.\nPalestrante: Prof. Esp. Mauro Antônio do Nascimento(IFSC)");
-        horario1.add("Evento: Roda de Conversa\nTema: GRAFFITI\nMediador: Dharla Raupp Kamers(Artista - CURA)\nMediador: Rafael Ferreira da Silva(Artista - CURA)");
-        horario1.add("Evento: Palestra\nTema: Os desafios da escola crítica e a inoperância da neutralidade.\nPalestrante: Prof. Ms. Paulo Henrique Schlickmann");
+        horario1.add("Evento: Palestra\nTema: O capital financeiro e o Ensino Superior no Brasil.\nPalestrante: Prof. Ms. Allan Kenji Seki (Doutorando/Educação/UFSC)");
+        horario1.add("Evento: Palestra\nTema: Trabalho docente na conjuntura atual.\nPalestrante: Profa. Msa. Renata Lucia Batista Flores (Doutorando/Geografia/UFSC).");
+        horario1.add("Evento: Roda de Conversa II \nTema: GRAFFITI\nMediador: Dharla Raupp Kamers(Artista - CURA)\nMediador: Rafael Ferreira da Silva(Artista - CURA)");
+        horario1.add("Evento: Palestra\nTema: História da [bi]ssexualidade: o que temos feito de nós?\nPalestrantes: Profa. Msa. Izabel Rizzi Mação (UFES) e Prof. Dr. Davis Moreira Alvim (IFES)");
         List<String> horario2 = new ArrayList<String>();
         horario2.add("Evento: Atividades Culturais\n");
         List<String> horario3 = new ArrayList<String>();
-        horario3.add("Evento: Palestra\nTema: Retrato e representação I (Fotografia)\nPalestrante: Profa. Msa. Maria Lucila Hom (Doutoranda/PPGE/UDESC)");
-        horario3.add("Evento: Palestra\nTema: Antropologia da Alimentação.\nPalestrante: Prof. Dr. Vilson Cesar Schenato (IFSC)");
-        horario3.add("Evento: Palestra\nTema: Pedagogia das competências versus pedagogia histórico-crítica: uma escolha entre a acomodação do mundo e a transformação social.\nPalestrante: Prof. Esp. Mauro Antônio do Nascimento(IFSC)");
-        horario3.add("Evento: Palestra\nTema: Homossexualidade como posição de sujeitos: problematizações sobre resistência e assujeitamento à heteronormatividade em contexto pequenas atravessadas pela ruralidade.\nPalestrante: Prof. Ms. Emerson Martins (UFFS)");
+        horario3.add("Evento: Palestra\nTema: Retrato e representação II (Fotografia)\nPalestrante: Profa. Msa. Maria Lucila Hom (Doutoranda/PPGE/UDESC)");
+        horario3.add("Evento: Palestra\nTema: Previdência Social brasileira no atual contexto.\nPalestrante: Profa. Msa. Angela Adelaide Lucena (UCS)");
+        horario3.add("Evento: Palestra\nTema: Reflexões sobre pesquisa em política educacional.\nPalestrante: Profa. Dra. Olinda Evangelista (UFSC)");
+        horario3.add("Evento: Palestra\nTema: Experiência das ocupações estudantis de 2016 no estado do Paraná: mobilizações possíveis e necessárias.\nPalestrante: Lucas Luan(DCE/UNIOESTE)");
         List<String> horario4 = new ArrayList<String>();
-        horario4.add("Evento: Mesa de debate\nTema: Escola para quê(m)?\nPalestrantes: Prof. Davis Moreira Alvim (IFES) e Prof(a). Ana Maria Said (UFU)\nCoordenador: Cícero Santiago de Oliveira - (IFSC)");
+        horario4.add("Evento: Mesa de debate - ENCERRAMENTO\nTema: Educação e diversidades.\nPalestrantes: Profa. Dra. Karina Klinke (UFO) e Profa. Msa. Izabel Rizzi Mação (UFES)");
         listDataChild.put(listDataHeader.get(0), horario1); // Header, Child data
         listDataChild.put(listDataHeader.get(1), horario2);
         listDataChild.put(listDataHeader.get(2), horario3); // Header, Child data
