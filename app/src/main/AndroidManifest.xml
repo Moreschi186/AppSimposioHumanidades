@@ -25,7 +25,7 @@
         <activity android:name=".Palestrantes" android:screenOrientation="portrait"/>
         <activity android:name=".Programacao" android:screenOrientation="portrait"/>
         <activity android:name=".Programacao29" android:screenOrientation="portrait" />
-        <activity android:name=".Programacao30" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Programacao30" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
