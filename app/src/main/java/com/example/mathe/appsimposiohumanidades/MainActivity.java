@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
-        //ativaTimer();
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
         Fragment fragment = new InicioFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.content_pai, fragment).commit();
+
+        ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
+        ativaTimer();
     }
 
     private void ativaTimer(){
@@ -87,36 +89,52 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (eventoAtual){
             case 0:
                 ocorrendoAgora.setText("O evento acabou. Obrigado pela sua participação. Não esqueça de avaliar o quê você achou do evento na aba Avalie o Evento");
+                break;
             case 1:
                 ocorrendoAgora.setText("O evento ainda não iniciou. Acesse a aba Programação para ver a programação completa do evento");
+                break;
             case 2:
                 ocorrendoAgora.setText("Solenidade de abertura - Local: Auditório");
+                break;
             case 3:
                 ocorrendoAgora.setText("Educação no Brasil desafios para a formação de sujeitos críticos");
+                break;
             case 4:
                 ocorrendoAgora.setText("O primeiro dia do evento acabou. Fique atento a programação do segundo dia na aba Programação");
+                break;
             case 5:
                 ocorrendoAgora.setText("EVENTOS MANHÃ SEGUNDO DIA");
+                break;
             case 6:
                 ocorrendoAgora.setText("Atividades Culturais");
+                break;
             case 7:
                 ocorrendoAgora.setText("EVENTOS TARDE SEGUNDO DIA");
+                break;
             case 8:
                 ocorrendoAgora.setText("Nenhuma palestra acontecendo no momento. Acesse a aba Programação e confira a programação completa do evento");
+                break;
             case 9:
                 ocorrendoAgora.setText("Escola para quê(m)?");
+                break;
             case 10:
                 ocorrendoAgora.setText("O segundo dia do evento acabou. Fique atento a programação do segundo dia na aba Programação");
+                break;
             case 11:
                 ocorrendoAgora.setText("EVENTOS MANHÃ TERCEIRO DIA");
+                break;
             case 12:
                 ocorrendoAgora.setText("Atividades Culturais");
+                break;
             case 13:
                 ocorrendoAgora.setText("EVENTOS TARDE TERCEIRO DIA");
+                break;
             case 14:
                 ocorrendoAgora.setText("Nenhuma palestra acontecendo no momento. Acesse a aba Programação e confira a programação completa do evento");
+                break;
             case 15:
                 ocorrendoAgora.setText("Educação e diversidade");
+                break;
         }
     }
 
@@ -204,9 +222,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment = new SobreAplicativoFragment();
             fragmentoSelecionado = true;
 
+        } else if (id == R.id.nav_local){
+            Intent intent = new Intent(this, LocalActivity.class);
+            startActivity(intent);
+            fragmentoSelecionado = false;
         }
 
         if(fragmentoSelecionado){
+            if (id == R.id.nav_inicio) {
+
+                ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
+                ativaTimer();
+            }
+            ocorrendoAgora.setText("");
             getSupportFragmentManager().beginTransaction().replace(R.id.content_pai, fragment).commit();
         }
 

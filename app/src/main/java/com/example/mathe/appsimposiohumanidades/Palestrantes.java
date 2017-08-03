@@ -61,8 +61,8 @@ public class Palestrantes extends AppCompatActivity {
         // Adding child data
         listDataHeader.add("Prof. Ms. Allan Kenji Seki");
         listDataHeader.add("Prof(a). Ana Maria Said");
-        listDataHeader.add("Profa. Msa. Angela Adelaide Lucena");
-        listDataHeader.add("Cícero Santiago de Oliveira");
+        listDataHeader.add("Prof(a). Msa. Angela Adelaide Lucena");
+        listDataHeader.add("Prof. Ms. Cícero Santiago de Oliveira");
         listDataHeader.add("Prof. Davis Moreira Alvim");
         listDataHeader.add("Dharla Raupp Kamers");
         listDataHeader.add("Prof. Ms. Emerson Martins");
@@ -73,7 +73,7 @@ public class Palestrantes extends AppCompatActivity {
         listDataHeader.add("Prof(a). Msa. Maria Lucila Horn");
         listDataHeader.add("Prof. Esp. Mauro Antônio do Nascimento");
         listDataHeader.add("Nei d´ Ogum ");
-        listDataHeader.add("Profa. Dra. Olinda Evangelista");
+        listDataHeader.add("Prof(a). Dra. Olinda Evangelista");
         listDataHeader.add("Prof. Ms. Paulo Henrique Schlickmann");
         listDataHeader.add("Rafael Ferreira da Silva");
         listDataHeader.add("Prof. Dr. Vilson Cesar Schenato");

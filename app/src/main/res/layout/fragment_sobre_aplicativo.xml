@@ -20,9 +20,10 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:fontFamily="serif-monospace"
                 android:text="Sobre o Aplicativo"
                 android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -31,18 +32,11 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:textColor="@android:color/black"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet diam quis nisi vestibulum aliquam. Sed pharetra augue et libero ultricies mattis. Nam bibendum, tortor et iaculis cursus, libero felis dignissim odio, sed condimentum enim ex vitae elit. Duis vel luctus ligula. Aliquam ac lacinia magna. Mauris maximus hendrerit augue, vel dignissim augue rhoncus quis. Nunc eu tellus a felis pretium tristique ac a arcu. Cras ac fringilla nisl, et congue felis. Mauris rutrum eget arcu vel accumsan. Ut non risus id enim iaculis finibus. Vivamus convallis risus sit amet scelerisque vestibulum. Proin eu ligula sapien. Fusce rhoncus malesuada cursus. Pellentesque dolor lorem, pulvinar vel eleifend quis, auctor id leo.
+                android:text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet diam quis nisi vestibulum aliquam. Sed pharetra augue et libero ultricies mattis. Nam bibendum, tortor et iaculis cursus, libero felis dignissim odio, sed condimentum enim ex vitae elit. Duis vel luctus ligula. Aliquam ac lacinia magna. Mauris maximus hendrerit augue, vel dignissim augue rhoncus quis. Nunc eu tellus a felis pretium tristique ac a arcu. Cras ac fringilla nisl, et congue felis. Mauris rutrum eget arcu vel accumsan. Ut non risus id enim iaculis finibus. Vivamus convallis risus sit amet scelerisque vestibulum. Proin eu ligula sapien. Fusce rhoncus malesuada cursus. Pellentesque dolor lorem, pulvinar vel eleifend quis, auctor id leo.
 
-        Aliquam erat volutpat. Pellentesque ac ultrices eros. Etiam consequat erat a risus bibendum tempus. Ut et feugiat purus, eu pulvinar libero. Sed vestibulum lorem sed felis placerat, non pulvinar dui congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc suscipit congue ante, at ultrices erat lacinia eu. Integer nec arcu dapibus, euismod velit nec, maximus neque."
-                android:textAlignment="center"
+        Aliquam erat volutpat. \nPellentesque ac ultrices eros. Etiam consequat erat a risus bibendum tempus. Ut et feugiat purus, eu pulvinar libero. Sed vestibulum lorem sed felis placerat, non pulvinar dui congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc suscipit congue ante, at ultrices erat lacinia eu. Integer nec arcu dapibus, euismod velit nec, maximus neque."
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.93"
-                app:srcCompat="@mipmap/fold6er" />
         </LinearLayout>
     </ScrollView>
 

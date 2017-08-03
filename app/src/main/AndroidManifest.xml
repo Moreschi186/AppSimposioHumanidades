@@ -22,10 +22,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Palestrantes" android:screenOrientation="portrait"/>
-        <activity android:name=".Programacao" android:screenOrientation="portrait"/>
-        <activity android:name=".Programacao29" android:screenOrientation="portrait" />
-        <activity android:name=".Programacao30" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Palestrantes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Programacao"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Programacao29"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Programacao30"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LocalActivity"></activity>
     </application>
 
 </manifest>
