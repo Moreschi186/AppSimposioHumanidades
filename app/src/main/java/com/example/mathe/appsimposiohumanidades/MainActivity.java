@@ -76,15 +76,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void verificaEvento() { // Verifica o horario do celular e mostra o evento que está ocorrendo no momento.
+        String dadosEvento[];
         int eventoAtual;
         Timestamp horaAtual = new Timestamp(System.currentTimeMillis());
         dadosEvento = evento.retornaEvento(horaAtual);
         System.out.println(dadosEvento[0]);
         System.out.println(dadosEvento[1]);
         System.out.println(dadosEvento[2]);
-        /*eventoAtual = evento.retornaEvento(horaAtual);
-        System.out.println("\nHorário: " + horaAtual + " " + "Evento atual: " + eventoAtual);
-        switch (eventoAtual){
+        //eventoAtual = evento.retornaEvento(horaAtual);
+        //System.out.println("\nHorário: " + horaAtual + " " + "Evento atual: " + eventoAtual);
+        /*switch (eventoAtual){
             case 0:
                 ocorrendoAgora.setText("O evento acabou. Obrigado pela sua participação. Não esqueça de avaliar o quê você achou do evento na aba Avalie o Evento");
                 break;
@@ -120,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 ocorrendoAgora.setText("Nenhuma palestra acontecendo no momento. Acesse a aba Programação e confira a programação completa do evento");
             case 15:
                 ocorrendoAgora.setText("Educação e diversidade");
-        }
+        }*/
     }
 
     @Override
