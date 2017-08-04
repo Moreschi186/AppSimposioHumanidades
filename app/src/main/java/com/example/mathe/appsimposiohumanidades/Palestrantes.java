@@ -1,6 +1,7 @@
 package com.example.mathe.appsimposiohumanidades;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -41,6 +42,7 @@ public class Palestrantes extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setTitle("Palestrantes");
+
     }
 
     public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar
@@ -61,19 +63,19 @@ public class Palestrantes extends AppCompatActivity {
         // Adding child data
         listDataHeader.add("Prof. Ms. Allan Kenji Seki");
         listDataHeader.add("Prof(a). Ana Maria Said");
-        listDataHeader.add("Profa. Msa. Angela Adelaide Lucena");
-        listDataHeader.add("Cícero Santiago de Oliveira");
+        listDataHeader.add("Prof(a). Msa. Angela Adelaide Lucena");
+        listDataHeader.add("Prof. Ms. Cícero Santiago de Oliveira");
         listDataHeader.add("Prof. Davis Moreira Alvim");
         listDataHeader.add("Dharla Raupp Kamers");
         listDataHeader.add("Prof. Ms. Emerson Martins");
-        listDataHeader.add("Prof(a). Msa. Izabel Rizzi Mação  ");
+        listDataHeader.add("Prof(a). Ms. Izabel Rizzi Mação  ");
         listDataHeader.add("Prof. Dr. Joel José de Souza");
         listDataHeader.add("Prof. Dr. José Clovis de Azevedo Olinda Evangelista");
         listDataHeader.add("Prof(a). Dra. Karina Klinke");
         listDataHeader.add("Prof(a). Msa. Maria Lucila Horn");
         listDataHeader.add("Prof. Esp. Mauro Antônio do Nascimento");
         listDataHeader.add("Nei d´ Ogum ");
-        listDataHeader.add("Profa. Dra. Olinda Evangelista");
+        listDataHeader.add("Prof(a). Dra. Olinda Evangelista");
         listDataHeader.add("Prof. Ms. Paulo Henrique Schlickmann");
         listDataHeader.add("Rafael Ferreira da Silva");
         listDataHeader.add("Prof. Dr. Vilson Cesar Schenato");

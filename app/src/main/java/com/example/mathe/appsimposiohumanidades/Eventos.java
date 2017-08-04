@@ -1,8 +1,12 @@
 package com.example.mathe.appsimposiohumanidades;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.IdRes;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import java.sql.Time;
@@ -13,8 +17,21 @@ import java.util.logging.LogRecord;
  * Created by mathe on 07/07/2017.
  */
 
-public class Eventos{
+public class Eventos extends Activity {
+    /*protected MainActivity context;
+    public Eventos(Context context) {
+        this.context = (MainActivity) context;
+    }
 
+    public void updateTV(final String str1) {
+        context.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                context.ocorrendoAgora.setText(str1);
+            }
+        });
+    }
+*/
     // Definição horários em variáveis finais dia 28/08/2017
     final Timestamp aberturaEvento = Timestamp.valueOf("2017-08-28 18:30:00");
     final Timestamp inicioPrimeiroDia = Timestamp.valueOf("2017-08-28 19:30:00");
@@ -36,10 +53,16 @@ public class Eventos{
     final Timestamp inicioNoiteTerceiroDia = Timestamp.valueOf("2017-08-30 19:00:00");
     final Timestamp fimNoiteTerceiroDia = Timestamp.valueOf("2017-08-30 22:00:00");
 
-    public int retornaEvento(Timestamp horaAtual) {
+    public String[] retornaEvento(Timestamp horaAtual) {
+        String[] evento = new String[5];
         if(horaAtual.before(aberturaEvento) == true){
-            return 1; // Evento ainda não começou
-        }
+            evento[0] = "Local: Teste";
+            evento[1] = "Evento: Palestra";
+            evento[2] = "Tema: XXXX";
+            evento[3] = "Palestrante: Prof. Ms. XXXX";
+            evento[4] = "Próximo evento: XXXXXXXXXXXXX";
+            return evento; // Evento ainda não começou
+        } /*
         else if (horaAtual.after(aberturaEvento) == true && horaAtual.before(inicioPrimeiroDia) == true) {
             return 2; // Cerimônia de abertura
         }
@@ -81,9 +104,9 @@ public class Eventos{
         }
         else if (horaAtual.after(inicioNoiteTerceiroDia) == true && horaAtual.before(fimNoiteTerceiroDia) == true) {
             return 15; // Eventos da noite terceiro dia
-        }
+        } */
         else {
-            return 0; // Retorna 0 após o evento já ter acabado.
+            return null; // Retorna 0 após o evento já ter acabado.
         }
 
     }
