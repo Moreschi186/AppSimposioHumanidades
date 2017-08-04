@@ -23,6 +23,10 @@
             android:id="@+id/nav_avalie_evento"
             android:icon="@drawable/ic_chat_black_24dp"
             android:title="Avalie o Evento" />
+        <item
+            android:id="@+id/nav_local"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Local" />
 
     </group>
 
