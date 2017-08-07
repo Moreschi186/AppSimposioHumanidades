@@ -1,41 +1,31 @@
 package com.example.mathe.appsimposiohumanidades;
 
-import java.sql.Time;
 import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
-import android.app.Activity;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
                                                                 InscricoesFragment.OnFragmentInteractionListener,
                                                                 InicioFragment.OnFragmentInteractionListener,
-                                                                AvalieEventoFragment.OnFragmentInteractionListener{
+                                                                AvalieEventoFragment.OnFragmentInteractionListener,
+                                                                SobreSimposioFragment.OnFragmentInteractionListener,
+                                                                SobreAplicativoFragment.OnFragmentInteractionListener{
 
     private Timer timerAtual = new Timer();
     private TimerTask task;
@@ -162,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Fragment fragment = null;
+        FragmentActivity fragmentActivity = null;
         Boolean fragmentoSelecionado = true;
 
         if (id == R.id.nav_inicio) {
@@ -200,15 +191,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentoSelecionado = false;
         }
         else if (id == R.id.nav_sobre_simposio) {
-            fragmentoSelecionado = false;
+            fragment = new SobreSimposioFragment();
+            fragmentoSelecionado = true;
 
 
         } else if (id == R.id.nav_sobre_aplicativo) {
-            fragmentoSelecionado = false;
+            fragment = new SobreAplicativoFragment();
+            fragmentoSelecionado = true;
 
+        } else if (id == R.id.nav_local){
+            Intent intent = new Intent(this, Maps.class);
+            startActivity(intent);
+            fragmentoSelecionado = false;
         }
 
         if(fragmentoSelecionado){
+            if (id == R.id.nav_inicio) {
+
+                ocorrendoAgora = (TextView) findViewById(R.id.label_evento);
+                ativaTimer();
+            }
+            ocorrendoAgora.setText("");
             getSupportFragmentManager().beginTransaction().replace(R.id.content_pai, fragment).commit();
         }
 
