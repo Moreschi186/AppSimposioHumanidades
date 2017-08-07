@@ -74,6 +74,7 @@ public class Palestrantes extends AppCompatActivity {
         listDataHeader.add("Prof(a). Dra. Karina Klinke");
         listDataHeader.add("Prof(a). Msa. Maria Lucila Horn");
         listDataHeader.add("Prof. Esp. Mauro Antônio do Nascimento");
+        listDataHeader.add("Prof(a). Dra. Mônica Ribeiro da Silva");
         listDataHeader.add("Nei d´ Ogum ");
         listDataHeader.add("Prof(a). Dra. Olinda Evangelista");
         listDataHeader.add("Prof. Ms. Paulo Henrique Schlickmann");
@@ -121,6 +122,9 @@ public class Palestrantes extends AppCompatActivity {
         List<String> mauroantonio =new ArrayList<String>();
         mauroantonio.add("Bacharel e Licenciado em Filosofia pela Universidade Federal de Uberlândia/UFU. Especialista em Ensino de Filosofia pela Universidade do Oeste \tPaulista/UNOESTE. Mestrando em Educação Profissional e Tecnológica em Rede Nacional (ProfEPT). Professor de Filosofia do Instituto Federal de Santa \tCatarina-IFSC com dedicação excluisiva. Coordenador do Núcleo de Cultura e Arte (NuCA) do Campus Canoinhas/IFSC e do projeto de Extensão IFSC SESC em \tAtos. Autor do livro Ser e Declínio e organizador do livro Aproximação-Distância. Foi sócio fundador e administrador da empresa Agência Arte \tProdutora e responsável pela concepção e produção executiva dos projetos: Bienal de Arte do Triângulo, Congresso de Arte e Produção Cultural do \tTriângulo e Alto Paranaíba, Simpósio de Arte e Produção Cultural de Uberlândia.");
 
+        List<String> monicaribeiro = new ArrayList<>();
+        monicaribeiro.add("Pós-doutorado em andamento na Faculdade de Educação da UNICAMP. Doutorado em Educação: História, Política e Ciências Sociais pela Pontifícia Universidade Católica de São Paulo (2003). Mestrado em Educação: Fundamentos da Educação pela Universidade Federal de São Carlos (1991) e Graduação em Pedagogia com habilitação em Administração Escolar pela Universidade Estadual Paulista Júlio de Mesquita Filho - UNESP Araraquara (1989). Professora na Universidade Federal do Paraná (1994 até o presente). Atua nos cursos de formação de professores e no Programa de Pós-Graduação em Educação - Mestrado e Doutorado. Tem interesse no campo de pesquisa em Políticas Educacionais com ênfase para o Ensino Médio e na avaliação de políticas públicas. Coordenadora do Grupo de Pesquisa Observatório do Ensino Médio. Chefe do Departamento de Planejamento e Administração Escolar (2005 a 2007). Vice-coordenadora do Programa de Pós-graduação em Educação da UFPR (2011-2012). Coordenadora do Programa de Pós-graduação em Educação (janeiro de 2013 a março de 2016). Vice-coordenadora do Fórum Sul de Coordenadores de Programas de Pós-Graduação em Educação (outubro 2015 a março 2016). Coordenadora do DINTER - Doutorado Interinstitucional - entre a UFPR e Universidade Federal do Acre com financiamento pela Capes (2013-2016). Coordenadora da produção dos materiais de formação continuada de professores do Pacto Nacional pelo Fortalecimento do Ensino Médio junto ao Ministério da Educação (2103-2014). Revisora de periódicos dentre eles Educação & Sociedade, Ensaio (Fundação Cesgranrio) e Revista Brasileira de Educação. Membro do Conselho Consultivo do periódico Educar em Revista. Parecerista ad hoc das seguintes agências de fomento: Capes, CNPq e Fundação Araucária. Pesquisadora do CNPq - bolsista produtividade PQ2. Atualmente supervisiona 2 pesquisas de pós-doutorado, orienta 6 teses de doutorado e 2 dissertações de mestrado. Coordenou a XI ANPEd Sul (Reunião Científica Regional da ANPEd) realizada em Curitiba de 24 a 27 de julho de 2016. Integrante do Movimento Nacional em Defesa do Ensino Médio. Vice-líder do Grupo de Pesquisa EMPesquisa - Pesquisas sobre Ensino Médio com sede na Unicamp e participação de pesquisadores de oito universidades brasileiras.");
+
         List<String> neid  =new ArrayList<String>();
         neid.add("????????????????");
 
@@ -150,11 +154,12 @@ public class Palestrantes extends AppCompatActivity {
         listDataChild.put(listDataHeader.get(10), karinaklinke);
         listDataChild.put(listDataHeader.get(11), marialucila);
         listDataChild.put(listDataHeader.get(12), mauroantonio);
-        listDataChild.put(listDataHeader.get(13), neid);
-        listDataChild.put(listDataHeader.get(14), olindaevangelista);
-        listDataChild.put(listDataHeader.get(15), paulohenrique);
-        listDataChild.put(listDataHeader.get(16), rafaelferreira);
-        listDataChild.put(listDataHeader.get(17), vilsoncesar); // Header, Child data
+        listDataChild.put(listDataHeader.get(13), monicaribeiro);
+        listDataChild.put(listDataHeader.get(14), neid);
+        listDataChild.put(listDataHeader.get(15), olindaevangelista);
+        listDataChild.put(listDataHeader.get(16), paulohenrique);
+        listDataChild.put(listDataHeader.get(17), rafaelferreira);
+        listDataChild.put(listDataHeader.get(18), vilsoncesar); // Header, Child data
 
     }
 }

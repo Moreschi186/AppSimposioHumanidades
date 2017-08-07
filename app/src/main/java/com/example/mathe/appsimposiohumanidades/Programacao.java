@@ -54,7 +54,7 @@ public class Programacao extends AppCompatActivity {
         List<String> horario1 = new ArrayList<String>();
         horario1.add("Solenidade de Abertura");
         List<String> horario2 = new ArrayList<String>();
-        horario2.add("Evento: Mesa de debate - ABERTURA\nTema: Educação no Brasil, desafios para a formação de sujeitos críticos.\nPalestrante: Prof. Dr. José Clovis de Azevedo Olinda Evangelista (UFSC)\nCoordenador: Prof. Dr. Joel José de Souza(IFSC)\n");
+        horario2.add("Evento: Mesa de debate - ABERTURA\nTema: Educação no Brasil, desafios para a formação de sujeitos críticos.\nPalestrante: Profa.  Dra. Olinda Evangelista (UFSC)\nPalestrante: Profa. Dra. Mônica Ribeiro da Silva (UFPR)\nCoordenador: Prof. Dr. Joel José de Souza(IFSC)\n");
         listDataChild.put(listDataHeader.get(0), horario1); // Header, Child data
         listDataChild.put(listDataHeader.get(1), horario2);
     }
