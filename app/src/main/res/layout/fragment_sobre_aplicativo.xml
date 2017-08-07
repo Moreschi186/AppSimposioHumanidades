@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mathe.appsimposiohumanidades.SobreAplicativoFragment">
+    tools:context="com.ifsc.mathe.appsimposiohumanidades.SobreAplicativoFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -42,25 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Programadores:"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="sans-serif-condensed"
-                android:text="
-    João Paulo Zorek\n
-    Matheus Renan Araujo"
-                android:textColor="@android:color/black"
-                android:textSize="15sp" />
-            <TextView
-                android:layout_margin="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Equipe de Apoio:"
+                android:text="Equipe de desenvolvimento:"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
             <TextView
@@ -70,15 +53,19 @@
                 android:fontFamily="sans-serif-condensed"
                 android:text="
     Fernanda Machado Belem\n
-    Gabriel Moreschi"
+    Gabriel Moreschi\n
+    João Paulo Zorek\n
+    Matheus Renan Araujo"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
+
 
             <TextView
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
                 android:text="Professor Orientador / Autor do Projeto:"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />

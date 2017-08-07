@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mathe.appsimposiohumanidades.SobreSimposioFragment">
+    tools:context="com.ifsc.mathe.appsimposiohumanidades.SobreSimposioFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -44,6 +44,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Produção:"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
             <TextView
@@ -62,6 +63,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Comissão Organizadora:"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
             <TextView
@@ -95,6 +97,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Instituições Parceiras:"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
             <TextView
