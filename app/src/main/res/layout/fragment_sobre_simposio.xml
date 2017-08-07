@@ -22,22 +22,100 @@
                 android:layout_height="36dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Sobre o II Simpósio de Humanidades - IFSC"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
+
             <TextView
-                android:id="@+id/textView3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
-                android:text="      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet diam quis nisi vestibulum aliquam. Sed pharetra augue et libero ultricies mattis. Nam bibendum, tortor et iaculis cursus, libero felis dignissim odio, sed condimentum enim ex vitae elit. Duis vel luctus ligula. Aliquam ac lacinia magna. \n       Mauris maximus hendrerit augue, vel dignissim augue rhoncus quis. Nunc eu tellus a felis pretium tristique ac a arcu. Cras ac fringilla nisl, et congue felis. Mauris rutrum eget arcu vel accumsan. Ut non risus id enim iaculis finibus. Vivamus convallis risus sit amet scelerisque vestibulum. Proin eu ligula sapien. Fusce rhoncus malesuada cursus. Pellentesque dolor lorem, pulvinar vel eleifend quis, auctor id leo. Aliquam erat volutpat. \n     Pellentesque ac ultrices eros. Etiam consequat erat a risus bibendum tempus. Ut et feugiat purus, eu pulvinar libero. Sed vestibulum lorem sed felis placerat, non pulvinar dui congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc suscipit congue ante, at ultrices erat lacinia eu. Integer nec arcu dapibus, euismod velit nec, maximus neque."
+                android:text="
+    O II Simpósio de Humanidades do IFSC Campus Canoinhas propõe o debate sobre a educação no Brasil e seus desafios para a formação de sujeitos críticos, chamando uma discussão entre o mundo do trabalho, a Sociedade Civil Organizada e as Políticas Públicas para Educação no Brasil, com ênfase nas possibilidades e nos desafios relacionados ao fortalecimento de práticas democráticas, ao desenvolvimento regional socialmente referenciado, inclusivo e de respeito à diversidade cultural, geracional, étnica, de gênero e orientação e de relações sustentáveis com o meio ambiente dentro do ambiente escolar."
                 android:textColor="@android:color/black"
-
+                android:textSize="15sp" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Produção:"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Canoinhas\nNEABI, NuCA E Grupo de Pesquisa Identidade, Desenvolvimento e Democracia"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Comissão Organizadora:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Joel José de Souza\n
+    Mauro Antônio do Nascimento\n
+    Roberta Costa Ribeiro da Silva\n
+    Ana Cláudia Burmester\n
+    Hendrie Ferreira Nunes\n
+    Patrícia Maccarini Moraes\n
+    Alice Felisbino Golin\n
+    Micheline Raquel de Barros\n
+    Marilde Salomon Ruppel\n
+    Vilson Cesar Schenato\n
+    Marcia Tiemy Morita Kawamoto\n
+    Rafael Mauricio Castanho\n
+    Davis Moreira Alvim\n
+    Iara Inês do Prado Gresczeschen\n
+    Osvaldo Bail\n
+    Argos Gumbowsky"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Instituições Parceiras:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Universidade do Contestado (UNC),\n
+    Projeto Territórios de Cidadania (NEDET),\n
+    Sindicato dos Trabalhadores em Educação na Rede Pública de Ensino do Estado de SC (SINTE),\n
+    Sindicato dos Trabalhadores na Agricultura Familiar do Planalto Norte (SINTRAF/PN),\n
+    Gerência estadual de Educação."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
 
             <ImageView
                 android:id="@+id/imageView3"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 app:srcCompat="@mipmap/fold6er" />

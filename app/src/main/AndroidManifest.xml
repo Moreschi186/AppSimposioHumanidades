@@ -11,6 +11,7 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +33,7 @@
         <activity android:name=".Programacao" />
         <activity android:name=".Programacao29" />
         <activity android:name=".Programacao30" />
-        <activity android:name=".LocalActivity" />
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
