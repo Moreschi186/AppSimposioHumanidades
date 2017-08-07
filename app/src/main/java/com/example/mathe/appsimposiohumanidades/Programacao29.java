@@ -52,19 +52,21 @@ public class Programacao29 extends AppCompatActivity {
         listDataHeader.add("19:00 - 22:00");
         // Adding child data
         List<String> horario1 = new ArrayList<String>();
-        horario1.add("Evento: Palestra\nTema: Diversidade étnico racial, de gênero e orientação.\nPalestrante: Nei d' Ogum(Militante GLBT)");
-        horario1.add("Evento: Palestra\nTema: Educação e desenvolvimento terrorial.\nPalestrante: Prof. Esp. Mauro Antônio do Nascimento(IFSC)");
-        horario1.add("Evento: Roda de Conversa\nTema: GRAFFITI\nMediador: Dharla Raupp Kamers(Artista - CURA)\nMediador: Rafael Ferreira da Silva(Artista - CURA)");
-        horario1.add("Evento: Palestra\nTema: Os desafios da escola crítica e a inoperância da neutralidade.\nPalestrante: Prof. Ms. Paulo Henrique Schlickmann");
+        horario1.add("Evento: Roda de Conversa\nTema: GRAFFITI\nMediador: Dharla Raupp Kamers(Artista Raup - Coletivo CURA)\nMediador: Rafael Ferreira da Silva(Artista Crione - Coletivo CURA)\nVagas: 20");
+        horario1.add("Evento: Palestra\nTema: Trabalho docente na conjuntura atual\nPalestrante: Profa. Msa. Renata Lucia Batista Flores(Doutorando/Geografia/UFSC)\nVagas: 40");
+        horario1.add("Evento: Palestra\nTema: Os desafios da escola crítica e a inoperância da neutralidade\nPalestrante: Prof. Ms. Paulo Henrique Schlickmann(Doutorando/Geografia/UFSC)\nVagas: 150");
+        horario1.add("Evento: Palestra\nTema: Construção humanizada: aspectos da relação homem x edifício\nPalestrante: Prof. Ms. Gabriel Moraes de Bem(IFSC)\nPalestrante: Profa. Msa. Roberta Costa Ribeiro da Silva(IFSC)\nVagas: 40");
         List<String> horario2 = new ArrayList<String>();
         horario2.add("Evento: Atividades Culturais\n");
         List<String> horario3 = new ArrayList<String>();
-        horario3.add("Evento: Palestra\nTema: Retrato e representação I (Fotografia)\nPalestrante: Profa. Msa. Maria Lucila Hom (Doutoranda/PPGE/UDESC)");
-        horario3.add("Evento: Palestra\nTema: Antropologia da Alimentação.\nPalestrante: Prof. Dr. Vilson Cesar Schenato (IFSC)");
-        horario3.add("Evento: Palestra\nTema: Pedagogia das competências versus pedagogia histórico-crítica: uma escolha entre a acomodação do mundo e a transformação social.\nPalestrante: Prof. Esp. Mauro Antônio do Nascimento(IFSC)");
-        horario3.add("Evento: Palestra\nTema: Homossexualidade como posição de sujeitos: problematizações sobre resistência e assujeitamento à heteronormatividade em contexto pequenas atravessadas pela ruralidade.\nPalestrante: Prof. Ms. Emerson Martins (UFFS)");
+        horario3.add("Evento: Palestra\nTema: Tornar-se mulher, um olhar para as relações de gênero\nPalestrante: Profa. Quéli Flach Anschau(Doutoranda/UFSC/PPGSS)\nVagas: 60");
+        horario3.add("Evento: Palestra\nTema: Reflexões sobre pesquisa em política nacional\nPalestrante: Profa. Dra. Olinda Evangelista(UFSC)\nVagas: 30");
+        horario3.add("Evento: Palestra\nTema: Retrato e representação (Fotografia) I\nPalestrante: Profa. Msa. Maria Lucila Hom (Doutoranda/PPGE/UDESC)\nPalestrante: Profa. Msa. Micheline Barros(IFSC)\nVagas: 20");
+        horario3.add("Evento: Palestra\nTema: Antropologia da Alimentação\nPalestrante: Prof. Dr. Vilson Cesar Schenato (IFSC)\nVagas: 40");
+        horario3.add("Evento: Palestra\nTema: Diversidade étnico racial, de gênero e orientação\nPalestrante: Nei d' Ogum(Militante Direitos Humanos)\nVagas: 40");
+        horario3.add("Evento: Cinema/Debate\nFilme: Cine-Fórum: O Capital(Le Capitale) - Direção: Costa-Gavras - Duração: 1h53min\nDebatedor: Sandro Luiz Bazzanella(Mestrado - UNC)\nVagas: 150");
         List<String> horario4 = new ArrayList<String>();
-        horario4.add("Evento: Mesa de debate\nTema: Escola para quê(m)?\nPalestrantes: Prof. Davis Moreira Alvim (IFES) e Prof(a). Ana Maria Said (UFU)\nCoordenador: Cícero Santiago de Oliveira - (IFSC)");
+        horario4.add("Evento: Mesa de debate\nTema: Escola para quê(m)?\nPalestrante: Prof. Davis Moreira Alvim(IFES)\nPalestrante: Prof(a). Ana Maria Said(UFU)\nCoordenador: Prof. Ms. Cícero Santiago de Oliveira(IFSC)\nVagas: 150");
         listDataChild.put(listDataHeader.get(0), horario1); // Header, Child data
         listDataChild.put(listDataHeader.get(1), horario2);
         listDataChild.put(listDataHeader.get(2), horario3); // Header, Child data
