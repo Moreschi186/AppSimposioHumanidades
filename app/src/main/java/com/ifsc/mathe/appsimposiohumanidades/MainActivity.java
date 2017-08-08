@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         else if (id == R.id.nav_dia28) {
-            Intent intent = new Intent(this, Programacao.class);
+           Intent intent = new Intent(this,Programacao.class);
             startActivity(intent);
             fragmentoSelecionado = false;
         }
