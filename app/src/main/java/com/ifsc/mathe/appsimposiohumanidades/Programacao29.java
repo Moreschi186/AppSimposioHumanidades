@@ -63,7 +63,7 @@ public class Programacao29 extends AppCompatActivity {
         horario3.add("Evento: Palestra\nTema: Reflexões sobre pesquisa em política nacional\nPalestrante: Profa. Dra. Olinda Evangelista(UFSC)\nVagas: 30");
         horario3.add("Evento: Palestra\nTema: Retrato e representação (Fotografia) I\nPalestrante: Profa. Msa. Maria Lucila Hom (Doutoranda/PPGE/UDESC)\nPalestrante: Profa. Msa. Micheline Barros(IFSC)\nVagas: 20");
         horario3.add("Evento: Palestra\nTema: Antropologia da Alimentação\nPalestrante: Prof. Dr. Vilson Cesar Schenato (IFSC)\nVagas: 40");
-        horario3.add("Evento: Palestra\nTema: Diversidade étnico racial, de gênero e orientação\nPalestrante: Nei d' Ogum(Militante Direitos Humanos)\nVagas: 40");
+        horario3.add("Evento: Palestra\nTema: Educação Popular em Saúde\nPalestrante: Jorge Senna (Militante Direitos Humanos)\nVagas: 40");
         horario3.add("Evento: Cinema/Debate\nFilme: Cine-Fórum: O Capital(Le Capitale) - Direção: Costa-Gavras - Duração: 1h53min\nDebatedor: Sandro Luiz Bazzanella(Mestrado - UNC)\nVagas: 150");
         List<String> horario4 = new ArrayList<String>();
         horario4.add("Evento: Mesa de debate\nTema: Escola para quê(m)?\nPalestrante: Prof. Davis Moreira Alvim(IFES)\nPalestrante: Prof(a). Ana Maria Said(UFU)\nCoordenador: Prof. Ms. Cícero Santiago de Oliveira(IFSC)\nVagas: 150");

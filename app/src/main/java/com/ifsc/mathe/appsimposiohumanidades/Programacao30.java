@@ -64,9 +64,10 @@ public class Programacao30 extends AppCompatActivity {
         horario3.add("Evento: Palestra\nTema: Mulheres e Homens, entre o Público e o Privado\nPalestrante: Quéli Flach Anschau(Doutoranda/UFSC/PPGSS)\nPalestrante: Msa. Patrícia Maccar(Assistente social/IFSC)\nVagas: 40");
         horario3.add("Evento: Palestra\nTema: Homossexualidade como posição de sujeitos: problematizações sobre resistências e assujeitamento à heteronormatividade em contexto de cidades pequenas atravessadas pela ruralidade\nPalestrante: Prof. Ms. Emerson Martins(UFFS)\nVagas: 40");
         horario3.add("Evento: Palestra\nTema: Religiosidade afro-brasileira na escola\nPalestrante: Babalorisã Ricardo Osanha Agué\nVagas: 100");
+        horario3.add("Evento: Palestra\nTema: Oficina de RAP\nPalestrante: Fabrício ATAK (Militante do movimento hip-hop)\nVagas: 100");
         horario3.add("Evento: Palestra\nTema: Educação e desenvolvimento territorial\nPalestrante: Prof. Esp. Mauro Antônio do Nascimento(IFSC)\nPalestrante: Arnaldo Luiz Milan(Economista e Assessor Territorial)\nPalestrante: Gabriela Lader(Engenheira Agrônoma e Assessora Territorial)\nVagas: 40");
         List<String> horario4 = new ArrayList<String>();
-        horario4.add("Evento: Mesa de debate - ENCERRAMENTO\nTema: Educação e diversidades.\nPalestrante: Nei d' Ogum(Militante Direitos Humanos)\nPalestrante: Profa. Msa. Izabel Rizzi Mação(UFES)\nPalestrante: Prof. Ms. Emerson Martins(UFFS)\nCoordenadora: Msa. Patrícia Maccar (Assistente social/IFSC)");
+        horario4.add("Evento: Mesa de debate - ENCERRAMENTO\nTema: Educação e diversidades.\nPalestrante: Jorge Senna(Militante Direitos Humanos)\nPalestrante: Prof(a). Ms(a). Izabel Rizzi Mação (UFES)\nPalestrante: Prof. Ms. Emerson Martins(UFFS)\nCoordenadora: Msa. Patrícia Maccar (Assistente social/IFSC)");
         listDataChild.put(listDataHeader.get(0), horario1); // Header, Child data
         listDataChild.put(listDataHeader.get(1), horario2);
         listDataChild.put(listDataHeader.get(2), horario3); // Header, Child data

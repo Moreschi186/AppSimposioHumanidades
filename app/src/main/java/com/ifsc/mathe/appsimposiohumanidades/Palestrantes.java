@@ -55,26 +55,26 @@ public class Palestrantes extends AppCompatActivity {
         listDataHeader.add("Prof. Dr. Davis Moreira Alvim");//OK
         listDataHeader.add("Dharla Raupp Kamers"); //OK
         listDataHeader.add("Prof. Ms. Emerson Martins");//OK
+        listDataHeader.add("Fabrício ATAK");//OK
         listDataHeader.add("Gabriela Lader");//OK
         listDataHeader.add("Prof. Ms. Gabriel Moraes De Bem");//OK
         listDataHeader.add("Prof(a). Ms. Izabel Rizzi Mação");//OK
         listDataHeader.add("Prof. Dr. Joel José de Souza"); //OK
+        listDataHeader.add("Jorge Senna"); //OK
         listDataHeader.add("Lucas Luan Gomes");//OK
         listDataHeader.add("Prof(a). Dr(a). Maressa Danielli Dolzan");//OK
-        listDataHeader.add("Profa. Msa. Maria Lucila Horn");//OK
+        listDataHeader.add("Prof(a). Ms(a). Maria Lucila Horn");//OK
         listDataHeader.add("Prof. Esp. Mauro Antônio do Nascimento");//OK
         listDataHeader.add("Prof(a). Ms(a). Micheline Barros");//OK
         listDataHeader.add("Michelle K. Vianna");//OK
         listDataHeader.add("Prof(a). Dr(a). Mônica Ribeiro da Silva");//OK
-        listDataHeader.add("Nei d´ Ogum ");//OK
         listDataHeader.add("Prof(a). Dra. Olinda Evangelista");//OK
         listDataHeader.add("Ms(a). Patrícia Maccar");//OK
         listDataHeader.add("Prof. Ms. Paulo Henrique Schlickmann");//OK
         listDataHeader.add("Prof(a). Quéli Flach Anschau");//OK
         listDataHeader.add("Rafael Ferreira da Silva");//OK
-        listDataHeader.add("Profa. Msa. Renata Lucia Batista Flores");//OK
-        listDataHeader.add("Babalorixá Ricardo Osanha Agué");//OK
-        listDataHeader.add("Profa. Msa. Roberta Costa Ribeiro da Silva");//OK
+        listDataHeader.add("Prof(a). Ms(a). Renata Lucia Batista Flores");//OK
+        listDataHeader.add("Prof(a). Ms(a). Roberta Costa Ribeiro da Silva");//OK
         listDataHeader.add("Prof. Sandro Luiz Bazzanella");//OK
         listDataHeader.add("Prof. Dr. Vilson Cesar Schenato");//OK
 
@@ -101,6 +101,9 @@ public class Palestrantes extends AppCompatActivity {
         List<String> emersonmartins  =new ArrayList<String>();
         emersonmartins.add("É professor Assistente II na Universidade da Fronteira Sul (UFFS), na área de Ciências Sociais e Ciência Política. É doutorando do Programa de Pós-Graduação em Psicologia pela Universidade Federal de Santa Catarina (UFSC) e possui mestrado em Sociologia Política (UFSC). Tem experiência na área de Sociologia Política, com ênfase em políticas educacionais inclusivas, atuando principalmente nos seguintes temas: participação política, relações interétnicas, orientação sexual, gênero, masculinidades, educação,violências, novas tecnologias de informação e comunicação (NTI) e cultura surda.");
 
+        List<String>  fabricioATAK =new ArrayList<String>();
+        fabricioATAK.add("É militante do Movimento Hip-hop no Rio Grande do Sul desde 2003. Foi um dos fundadores do Grupo Zona Oeste (GZO), e do Coletivo Estampa da Quebrada, em Santa Maria. Atualmente milita junto as populações periféricas e realiza atividades culturais em escolas públicas, promovendo a criação de poesias, a cultura Hip-Hop e o RAP, sobretudo em torno dos temas dos direitos das juventudes urbanas e rurais.");
+
         List<String> gabrielmoraes  =new ArrayList<String>();
         gabrielmoraes.add("Mestre em Arquitetura e Urbanismo pela Universidade Federal de Santa Catarina - UFSC (2016) e Tecnólogo em Construção de Edifícios pelo Instituto Federal de Santa Catarina - IFSC (2008). Desenvolve pesquisas nas áreas de: acessibilidade, design inclusivo, desenho universal, prototipagem rápida e fabricação digital. Atua no mercado de Gerenciamento, Planejamento e Execução de Obras de Construção Civil e Arquitetura Efêmera.");
 
@@ -114,8 +117,12 @@ public class Palestrantes extends AppCompatActivity {
         List<String> joeljose =new ArrayList<String>();
         joeljose.add("Professor do Instituto Federal de Santa Catarina, possui graduação em Geografia pela Universidade Federal de Santa Catarina (2006), mestrado em Geografia pela Universidade Federal de Santa Catarina (2009), doutor em Geografia pela Universidade Federal de Santa Catarina (2014). Atualmente e participa de grupos de pesquisa na Universidade Federal de Santa Catarina, Instituto Federal de Santa Catarina e Universidade Federal da Integração Latino-Americana. Tem experiência na área de Geografia, como professor de Ensino básico, médio, EJA e Ensino Superior a Distância. Como pesquisador atua na área de desenvolvimento regional e urbano, com ênfase em Geografia Econômica e Rural, atuando nos seguintes temas: industrialização, laticínios e agroindústria.");
 
+        List<String> jorgesenna =new ArrayList<String>();
+        jorgesenna.add("Militante dos Direitos Humanos no Rio Grande do Sul. É Coordenador da Rede de Promotores Populares em Saúde. Educador Popular em Práticas de Saúde. Membro do Comitê Nacional de Educação Popular em Saúde do Ministério da Saúde. Militante do Movimento Negro Unificado. Colaborador da Politica da Saúde LGBT.");
+
+
         List<String> lucasluan = new ArrayList<String>();
-        lucasluan.add("");
+        lucasluan.add("...");
 
         List<String> maressadanielli =new ArrayList<String>();
         maressadanielli.add("Graduada em Química pela Universidade Federal de Santa Catarina (UFSC) com habilitação em Licenciatura, Bacharel e Química Tecnológica. Mestre e Doutora pelo Departamento de Química da UFSC, tese defendida em abril de 2016. Pós-graduação desenvolvida com ênfase em Química Analítica, onde atuou na área de Separações, com técnicas cromatográficas e eletroforéticas. Pelo período de um ano (2013-2014) realizou doutorado-sanduiche nos EUA, na University of Texas at Arlington, sob a supervisão do Prof. Dr. Daniel W. Armstrong, tendo atuado, principalmente, no desenvolvimento de fases estacionárias para HPLC e colunas cromatográficas preenchidas com partículas de sílica superficialmente porosas; separações enantioméricas e em modo HILIC. Tem experiência no desenvolvimento de métodos analíticos utilizando HPLC-MS/MS, HPLC-UV, CE-UV e GC-FID. Atualmente é membro efetivo do corpo docente do Instituto Federal de Santa Catarina, Campus Canoinhas, atuando nos cursos Técnico Integrado em Alimentos e Superior de Tecnologia em Alimentos.");
@@ -130,14 +137,10 @@ public class Palestrantes extends AppCompatActivity {
         michelinebarros.add("Possui Mestrado em Educação e Cultura (2006), com dissertação na área de Historia da Arte em Santa Catarina, é especialista em Linguagem Plástica Contemporânea(2001) e graduada em Educação Artística - Habilitação Artes Plásticas (1997), todos na Universidade do Estado de Santa Catarina UDESC. Atualmente é professora efetiva no Instituto Federal de Santa Catarina - Campus Canoinhas. Deixou a rede municipal de Ensino de Florianópolis depois de 11 anos, em 2016. Foi professora colaboradora no Centro de Artes CEART UDESC (2001e 2013) e professora colaboradora do Centro de Educação a Distância CEAD UDESC (2002 a 2008 e 2012). Autora do Caderno pedagógico EAD Arte e Desenvolvimento Infantil. Foi Presidente da Associação dos Arte-Educadores de Santa Catarina - AAESC 2008-2009 e representantou os Arte-educadores no Conselho Estadual de Cultura CEC entre 2008 e 2009. Criou a carteira do Arte educador que identifica o profissional, professor de Artes, de qualquer linguagem a entrar com descontos em eventos culturais (2009). Autora do livro ''Vera Sabino: Intuição e Arte'' pela Editora Letras Contemporâneas em Julho de 2011.");
 
         List<String> michellevianna =new ArrayList<String>();
-        michellevianna.add("Terapeuta Holística e Life Coaching");
-
+        michellevianna.add("Terapeuta holística e coach de vida, com qualificações internacionais e mais de treze anos de experiência em terapias naturais. Seu trabalho visa buscar o reequilíbrio do corpo, mente e emoções promovendo bem estar, transformações pessoais com foco no desenvolvimento do potencial humano.");
 
         List<String> monicaribeiro = new ArrayList<>();
         monicaribeiro.add("Pós-doutorado em andamento na Faculdade de Educação da UNICAMP. Doutorado em Educação: História, Política e Ciências Sociais pela Pontifícia Universidade Católica de São Paulo (2003). Mestrado em Educação: Fundamentos da Educação pela Universidade Federal de São Carlos (1991) e Graduação em Pedagogia com habilitação em Administração Escolar pela Universidade Estadual Paulista Júlio de Mesquita Filho - UNESP Araraquara (1989). Professora na Universidade Federal do Paraná (1994 até o presente). Atua nos cursos de formação de professores e no Programa de Pós-Graduação em Educação - Mestrado e Doutorado. Tem interesse no campo de pesquisa em Políticas Educacionais com ênfase para o Ensino Médio e na avaliação de políticas públicas. Coordenadora do Grupo de Pesquisa Observatório do Ensino Médio. Chefe do Departamento de Planejamento e Administração Escolar (2005 a 2007). Vice-coordenadora do Programa de Pós-graduação em Educação da UFPR (2011-2012). Coordenadora do Programa de Pós-graduação em Educação (janeiro de 2013 a março de 2016). Vice-coordenadora do Fórum Sul de Coordenadores de Programas de Pós-Graduação em Educação (outubro 2015 a março 2016). Coordenadora do DINTER - Doutorado Interinstitucional - entre a UFPR e Universidade Federal do Acre com financiamento pela Capes (2013-2016). Coordenadora da produção dos materiais de formação continuada de professores do Pacto Nacional pelo Fortalecimento do Ensino Médio junto ao Ministério da Educação (2103-2014). Revisora de periódicos dentre eles Educação & Sociedade, Ensaio (Fundação Cesgranrio) e Revista Brasileira de Educação. Membro do Conselho Consultivo do periódico Educar em Revista. Parecerista ad hoc das seguintes agências de fomento: Capes, CNPq e Fundação Araucária. Pesquisadora do CNPq - bolsista produtividade PQ2. Atualmente supervisiona 2 pesquisas de pós-doutorado, orienta 6 teses de doutorado e 2 dissertações de mestrado. Coordenou a XI ANPEd Sul (Reunião Científica Regional da ANPEd) realizada em Curitiba de 24 a 27 de julho de 2016. Integrante do Movimento Nacional em Defesa do Ensino Médio. Vice-líder do Grupo de Pesquisa EMPesquisa - Pesquisas sobre Ensino Médio com sede na Unicamp e participação de pesquisadores de oito universidades brasileiras.");
-
-        List<String> neid  =new ArrayList<String>();
-        neid.add("Militante Direitos Humanos");
 
         List<String> olindaevangelista =new ArrayList<String>();
         olindaevangelista.add("Possui graduação em Filosofia pela Universidade Federal do Paraná (1980), mestrado em Educação: História, Política, Sociedade pela Pontifícia Universidade Católica de São Paulo (1988) e doutorado em Educação: História, Política, Sociedade pela Pontifícia Universidade Católica de São Paulo (1997). Realizou Estágio Pós-doutoral na Universidade do Minho, Braga, PT. Atualmente é professor aposentado da Universidade Federal de Santa Catarina e Voluntária no PPGE-CED-UFSC. Tem experiência na área de Educação, com ênfase em Educação, atuando principalmente nos seguintes temas: política educacional, formação docente, educação, política de educação e história da educação.");
@@ -157,9 +160,6 @@ public class Palestrantes extends AppCompatActivity {
         List<String> renatalucia =new ArrayList<String>();
         renatalucia.add("Professora do quadro efetivo do Colégio de Aplicação da Universidade Federal do Rio de Janeiro - CAp/UFRJ. Graduada em Pedagogia pela Universidade do Estado do Rio de Janeiro (1998). Mestre em Educação pelo Programa de Pós-Graduação em Educação da Universidade do Estado do Rio de Janeiro - ProPED/UERJ - (2011). Coordenadora do Curso de Extensão Conversas entre Professores das Séries Iniciais do Ensino Fundamental, que ocorre no CAp/UFRJ. Membro integrante do Coletivo de Estudos em Marxismo e Educação - COLEMARX - da Universidade Federal do Rio de Janeiro. Co-coordenadora do Grupo de Pesquisa ConPAS - Conversas entre Professores: Alteridades e Singularidades. Doutoranda em Educação no Programa de Pós-Graduação em Educação da Universidade Federal de Santa Catarina - PPGE/UFSC.");
 
-        List<String> ricardoosanha =new ArrayList<String>();
-        ricardoosanha.add("");
-
         List<String> robertacosta =new ArrayList<String>();
         robertacosta.add("Possui graduação pela Universidade Federal do Rio Grande do Sul (2005). Tem experiência na área de Arquitetura e Urbanismo, com ênfase em Arquitetura e Urbanismo, atuando principalmente no lançamento de idéias, criação, desenvolvimento e detalhamento de projetos de stands, residências, interiores, móveis modulados. Trabalhou durante um ano como professora substituta do Curso Técnico em Edificações do IFSC, Câmpus Florianópolis e atualmente atua como docente efetiva do Curso Técnico em Edificações do IFSC, Câmpus Canoinhas.");
 
@@ -172,32 +172,34 @@ public class Palestrantes extends AppCompatActivity {
         // ATUALIZAR OS INDICES
         listDataChild.put(listDataHeader.get(0), allankenji);
         listDataChild.put(listDataHeader.get(1), anamaria);
-        listDataChild.put(listDataHeader.get(2), cicerosantiago);
-        listDataChild.put(listDataHeader.get(3), davismoreira);
-        listDataChild.put(listDataHeader.get(4), dharlaraupp);
-        listDataChild.put(listDataHeader.get(5), emersonmartins);
-        listDataChild.put(listDataHeader.get(6), gabrielalader);
-        listDataChild.put(listDataHeader.get(7), gabrielmoraes);
-        listDataChild.put(listDataHeader.get(8), izabelrizzi);
-        listDataChild.put(listDataHeader.get(9), joeljose);
-        listDataChild.put(listDataHeader.get(10), lucasluan);
-        listDataChild.put(listDataHeader.get(11), maressadanielli);
-        listDataChild.put(listDataHeader.get(12), marialucila);
-        listDataChild.put(listDataHeader.get(13), mauroantonio);
-        listDataChild.put(listDataHeader.get(14), michelinebarros);
-        listDataChild.put(listDataHeader.get(15), michellevianna);
-        listDataChild.put(listDataHeader.get(16), monicaribeiro);
-        listDataChild.put(listDataHeader.get(17), neid);
-        listDataChild.put(listDataHeader.get(18), olindaevangelista);
-        listDataChild.put(listDataHeader.get(19), patriciamaccar);
-        listDataChild.put(listDataHeader.get(20), paulohenrique);
-        listDataChild.put(listDataHeader.get(21), queliflach);
-        listDataChild.put(listDataHeader.get(22), rafaelferreira);
-        listDataChild.put(listDataHeader.get(23), renatalucia);
-        listDataChild.put(listDataHeader.get(24), ricardoosanha);
-        listDataChild.put(listDataHeader.get(25), robertacosta);
-        listDataChild.put(listDataHeader.get(26), sandroluiz);
-        listDataChild.put(listDataHeader.get(27), vilsoncesar); // Header, Child data
+        listDataChild.put(listDataHeader.get(2), arnaldoluiz);
+        listDataChild.put(listDataHeader.get(3), cicerosantiago);
+        listDataChild.put(listDataHeader.get(4), davismoreira);
+        listDataChild.put(listDataHeader.get(5), dharlaraupp);
+        listDataChild.put(listDataHeader.get(6), emersonmartins);
+        listDataChild.put(listDataHeader.get(7), fabricioATAK);
+        listDataChild.put(listDataHeader.get(8), gabrielalader);
+        listDataChild.put(listDataHeader.get(9), gabrielmoraes);
+        listDataChild.put(listDataHeader.get(10), izabelrizzi);
+        listDataChild.put(listDataHeader.get(11), joeljose);
+        listDataChild.put(listDataHeader.get(12), jorgesenna);
+        listDataChild.put(listDataHeader.get(13), lucasluan);
+        listDataChild.put(listDataHeader.get(14), maressadanielli);
+        listDataChild.put(listDataHeader.get(15), marialucila);
+        listDataChild.put(listDataHeader.get(16), mauroantonio);
+        listDataChild.put(listDataHeader.get(17), michelinebarros);
+        listDataChild.put(listDataHeader.get(18), michellevianna);
+        listDataChild.put(listDataHeader.get(19), monicaribeiro);
+        listDataChild.put(listDataHeader.get(20), olindaevangelista);
+        listDataChild.put(listDataHeader.get(21), patriciamaccar);
+        listDataChild.put(listDataHeader.get(22), paulohenrique);
+        listDataChild.put(listDataHeader.get(23), queliflach);
+        listDataChild.put(listDataHeader.get(24), rafaelferreira);
+        listDataChild.put(listDataHeader.get(25), renatalucia);
+        listDataChild.put(listDataHeader.get(26), robertacosta);
+        listDataChild.put(listDataHeader.get(27), sandroluiz);
+        listDataChild.put(listDataHeader.get(28), vilsoncesar);
+         // Header, Child data
 
     }
 }
