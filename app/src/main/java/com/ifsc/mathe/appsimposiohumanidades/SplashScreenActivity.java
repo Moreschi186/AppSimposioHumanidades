@@ -1,9 +1,14 @@
 package com.ifsc.mathe.appsimposiohumanidades;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -15,6 +20,10 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splash_screen);
+
+        ProgressBar progress = (ProgressBar) findViewById(R.id.progressBar);
+
+        new MinhaTask(this, progress).execute();
 
         new Handler().postDelayed(new Runnable() {
             /*
@@ -33,3 +42,5 @@ public class SplashScreenActivity extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
     }
 }
+
+
