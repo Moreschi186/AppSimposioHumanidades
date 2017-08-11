@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentoSelecionado = true;
 
         } else if (id == R.id.nav_local){
-            Intent intent = new Intent( this, Maps.class);
+            Intent intent = new Intent(this, Maps.class);
             startActivity(intent);
             fragmentoSelecionado = false;
         }

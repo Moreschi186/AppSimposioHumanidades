@@ -2,9 +2,18 @@ package com.ifsc.mathe.appsimposiohumanidades;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.TextPaint;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.TextAppearanceSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,8 +67,17 @@ public class InscricoesFragment extends Fragment {
 
     private void mensagem(){
         AlertDialog.Builder mensagem = new AlertDialog.Builder(this.getActivity()).setTitle("Como realizar sua inscrição:");
-        mensagem.setMessage("1. Selecione o tipo de atividade como EVENTO e realize a busca.\n\n2. Na aba 'Cursos e Eventos localizados' localize o evento 'II Simpósio de Humanidades - IFSC Canoinhas' e clique no botão de inscrição representado por uma seta verde.");
-        mensagem.setNeutralButton("Entendi", null);
+        Spannable texto = new SpannableString("1. Localize a aba 'Cursos e Eventos localizados'.\n\n2. Dentro desta aba localize o II Simpósio de Humanidades IFSC Canoinhas.\n\n3.Clique na seta verde localizada no lado direito.\n\n4.Preencha o formulário de inscrição com seus dados.\n\n5. Pronto, voce já está inscrito no Simpósio.\n\nOBS: Lembre-se, você também deve se inscrever para todas as oficinas e palestras que deseja participar.\nAs palestras e oficinas do evento estarão localizadas na aba 'Mini Curso e Mini Eventos localizados\nAtente-se para o choque de horários das palestras e oficinas.'");
+        texto.setSpan(new android.text.style.StyleSpan(Typeface.BOLD), 18, 48, 0);
+        texto.setSpan(new ForegroundColorSpan(Color.BLUE), 18, 48, 0);
+        texto.setSpan(new android.text.style.StyleSpan(Typeface.BOLD), 82, 126, 0);
+        texto.setSpan(new ForegroundColorSpan(Color.BLUE), 82, 126, 0);
+        texto.setSpan(new android.text.style.StyleSpan(Typeface.BOLD), 279, 545, 0);
+        texto.setSpan(new ForegroundColorSpan(Color.BLUE), 279, 545, 0);
+        mensagem.setMessage(texto);
+        Spannable entendi = new SpannableString("Entendi");
+        entendi.setSpan(new android.text.style.StyleSpan(Typeface.BOLD), 0, 7, 0);
+        mensagem.setNeutralButton(entendi, null);
         mensagem.show();
     }
 
@@ -79,7 +97,7 @@ public class InscricoesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_inscricoes, container, false);
         mWebView = (WebView) v.findViewById(R.id.webview1);
-        mWebView.loadUrl("https://sigaa.ifsc.edu.br/sigaa/public/extensao/consulta_extensao.jsf"); // aqui podemos colocar a url das inscricoes
+        mWebView.loadUrl("https://sigaa.ifsc.edu.br/sigaa/link/public/extensao/inscricoesOnline"); // aqui podemos colocar a url das inscricoes
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setSupportZoom(true);
